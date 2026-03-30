@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anurag Sajikumar Nair | Digital Marketing Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f5f1ea;--paper:#fbfaf7;--ink:#101010;--muted:#5a6571;--line:rgba(16,16,16,.1);--accent:#ff922b;--accent-soft:#ffb76b;--band:#2d2d2d;--card:rgba(255,255,255,.72);--shadow:0 24px 60px rgba(16,16,16,.12);--radius:30px;--container:min(1240px,calc(100vw - 28px))}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Manrope",sans-serif;background:radial-gradient(circle at 15% 12%,rgba(255,255,255,.85),transparent 28%),radial-gradient(circle at 84% 14%,rgba(255,255,255,.7),transparent 20%),radial-gradient(circle at 50% 100%,rgba(255,194,113,.18),transparent 18%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='%23d6d0c6' fill-opacity='.18'%3E%3Ccircle cx='12' cy='12' r='1'/%3E%3Ccircle cx='42' cy='31' r='1'/%3E%3Ccircle cx='90' cy='18' r='1'/%3E%3Ccircle cx='134' cy='44' r='1'/%3E%3Ccircle cx='160' cy='19' r='1'/%3E%3Ccircle cx='28' cy='80' r='1'/%3E%3Ccircle cx='78' cy='78' r='1'/%3E%3Ccircle cx='150' cy='88' r='1'/%3E%3Ccircle cx='24' cy='144' r='1'/%3E%3Ccircle cx='86' cy='138' r='1'/%3E%3Ccircle cx='144' cy='152' r='1'/%3E%3C/g%3E%3C/svg%3E"),var(--bg);overflow-x:hidden}
+    img{display:block;max-width:100%}a{text-decoration:none;color:inherit}button,input,textarea{font:inherit}
+    .container{width:var(--container);margin:0 auto}.section{padding:30px 0}.section-dark{background:#0d0d11;color:#f6f3ed}
+    .top-pill{position:sticky;top:16px;z-index:50;display:flex;justify-content:center;pointer-events:none;margin-top:0}.top-pill__inner{pointer-events:auto;display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:999px;background:rgba(26,26,26,.84);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(18px);box-shadow:0 18px 40px rgba(0,0,0,.24)}.top-pill a{padding:12px 20px;border-radius:999px;font-weight:700;color:#f4f4f4}.top-pill .is-active{background:var(--accent);color:#fff}
+    .hero{position:relative;padding:88px 0 0;overflow:hidden}.spark{position:absolute;font-size:84px;line-height:1;color:var(--accent);opacity:.82;user-select:none}.spark.left{left:9%;top:31%;transform:rotate(-16deg)}.spark.right{right:19%;top:7%;transform:rotate(18deg)}.hero-intro{position:relative;z-index:3;text-align:center;padding-top:0}.hello-badge{display:inline-flex;align-items:center;justify-content:center;padding:10px 26px;border-radius:999px;border:2px solid var(--ink);background:rgba(255,255,255,.86);font-size:1.02rem;font-weight:800}.hero-title{margin:18px auto 0;max-width:1180px;font-family:"Syne",sans-serif;font-size:clamp(3.5rem,8.4vw,6.5rem);line-height:.88;letter-spacing:-.075em}.hero-title .accent{color:var(--accent)}.hero-title .emoji{display:inline-block;transform:translateY(-.04em);margin-left:.08em}.hero-subtitle{margin:26px auto 0;max-width:1180px;font-family:"Syne",sans-serif;font-size:clamp(2rem,4.5vw,4.4rem);line-height:.96;letter-spacing:-.06em}
+    .hero-stage{display:grid;grid-template-columns:1fr minmax(360px,560px) 1fr;align-items:end;gap:18px;min-height:500px;margin-top:10px;position:relative;z-index:2}.hero-quote,.hero-side{align-self:end;padding-bottom:112px}.hero-quote{max-width:300px;color:#25364a;justify-self:start}.hero-quote p{margin:0;font-size:clamp(1rem,1.55vw,1.12rem);line-height:1.34}.hero-quote-mark{font-size:84px;line-height:.72;font-weight:800;color:#38506f;margin:0 0 8px}.hero-note{display:none}.hero-visual{min-height:455px;display:flex;align-items:end;justify-content:center;position:relative}.hero-visual::before{content:"";position:absolute;left:7%;right:7%;bottom:-12%;height:56%;background:var(--accent-soft);border-radius:999px 999px 0 0}.hero-photo{position:relative;z-index:2;width:min(100%,470px);filter:drop-shadow(0 20px 36px rgba(0,0,0,.18))}
+    .chip{position:absolute;z-index:3;display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:#111;color:#fff;font-weight:700;box-shadow:0 14px 28px rgba(0,0,0,.18);font-size:1rem}.chip.marketing{left:3%;top:22%}.chip.brand{left:13%;bottom:14%}.chip.ads{right:6%;top:36%}.chip.social{right:-2%;bottom:14%}.hero-side{justify-self:end;text-align:center;max-width:260px}.hero-side .big{font-family:"Syne",sans-serif;font-size:clamp(3rem,5vw,4.2rem);line-height:.92;letter-spacing:-.065em}.hero-side .small{font-size:clamp(1rem,1.3vw,1.28rem);line-height:1.08;color:#24364b}
+    .stat-band{position:relative;z-index:4;margin-top:-16px;background:var(--band);color:#fff;padding:24px 0 22px}.stat-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;align-items:center}.stat{text-align:center}.stat strong{display:block;font-family:"Syne",sans-serif;font-size:clamp(2.8rem,4.8vw,5.3rem);line-height:.88;letter-spacing:-.07em;margin-bottom:8px}.stat span{display:block;font-weight:700;font-size:clamp(1rem,1.3vw,1.22rem)}
+    .marquee-wrap{overflow:hidden;padding:12px 0;background:#ebe7ef;border-top:1px solid rgba(16,16,16,.06);border-bottom:1px solid rgba(16,16,16,.06)}.marquee{display:flex;width:max-content;gap:34px;font-family:"Syne",sans-serif;font-size:clamp(1.35rem,2.8vw,3rem);letter-spacing:-.05em;white-space:nowrap;animation:marquee 26s linear infinite}.marquee span{display:inline-flex;align-items:center;gap:34px}.marquee em{font-style:normal;color:var(--accent)}
+    .split,.cards-two,.connect,.thank-grid{display:grid;gap:28px}.split{grid-template-columns:1.18fr .82fr;align-items:center}.cards-two{grid-template-columns:1.04fr .96fr;align-items:start}.connect{grid-template-columns:.95fr 1.05fr}.thank-grid{grid-template-columns:1.1fr .9fr;align-items:center}.section-title{margin:0 0 18px;font-family:"Syne",sans-serif;font-size:clamp(2.8rem,6vw,5.8rem);line-height:.9;letter-spacing:-.075em}.section-title.light{color:#fff}.lead-copy{max-width:760px;color:#223447;font-size:clamp(1.04rem,1.5vw,1.35rem);line-height:1.43}.lead-copy p{margin:0 0 22px}.underline{font-weight:800;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:5px;text-underline-offset:4px}
+    .portrait-card,.card,.tools-wrap,.connect-card,.case-card,.web-card,.skills-panel{background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow)}.portrait-card{min-height:620px;border-radius:32px;overflow:hidden;position:relative;display:flex;align-items:end;justify-content:center}.portrait-card::before{content:"";position:absolute;left:-2%;right:-2%;bottom:-12%;height:52%;border-radius:999px 999px 0 0;background:var(--accent-soft)}.portrait-card img{position:relative;z-index:2;width:min(100%,560px);max-height:92%;object-fit:contain;filter:drop-shadow(0 20px 34px rgba(0,0,0,.18))}.card,.connect-card,.case-card,.tools-wrap,.web-card,.skills-panel{border-radius:34px}.card-pad,.connect-card,.tools-wrap,.web-card,.skills-panel{padding:24px}
+    .timeline{position:relative;padding-left:34px;margin-top:12px}.timeline::before{content:"";position:absolute;left:16px;top:12px;bottom:16px;width:5px;border-radius:999px;background:linear-gradient(180deg,#4c89ff,#4f72ff,#80a3ff)}.timeline-item{position:relative;padding:10px 0 22px 76px}.timeline-item:last-child{padding-bottom:0}.timeline-icon{position:absolute;left:0;top:8px;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;border:1px solid rgba(16,16,16,.08);background:linear-gradient(135deg,#fff,#e7edf8);color:#21446a;font-weight:800;box-shadow:0 10px 22px rgba(0,0,0,.12)}h3{margin:0}.item-title{font-size:clamp(1.08rem,1.55vw,1.55rem);line-height:1.14}.meta{margin:4px 0 7px;color:var(--muted);font-weight:700}.item-copy{color:#27384c;line-height:1.34;font-size:.98rem}
+    .stack,.mini-list,.contact-actions,.form-grid,.thank-stack{display:grid;gap:16px}.mini-item{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:start;padding-bottom:14px;border-bottom:1px solid rgba(16,16,16,.08)}.mini-item:last-child{border-bottom:0;padding-bottom:0}.mini-logo{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-weight:800;color:#21446a;background:linear-gradient(135deg,#fff,#edf2fc);border:1px solid rgba(16,16,16,.08)}.pill{display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:999px;background:#e8eaee;color:#2b3745;font-weight:700}
+    .tools-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 26px;margin-top:10px}.tool-group{background:rgba(255,255,255,.58);border:1px solid rgba(16,16,16,.06);border-radius:26px;padding:18px}.tool-header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}.logo-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}.logo-tile{width:82px;height:82px;border-radius:20px;background:linear-gradient(135deg,#fff,#e8edf2);border:1px solid rgba(16,16,16,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 10px 18px rgba(0,0,0,.06);display:grid;place-items:center}.logo-tile svg{width:50px;height:50px}.bullet-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px}.bullet-grid span{position:relative;padding-left:16px;color:#28384d}.bullet-grid span::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+    .results-intro{display:grid;grid-template-columns:.7fr 1.3fr;gap:22px;align-items:center;padding:26px 28px;border-radius:32px;background:#2b2b2b;color:#fff;overflow:hidden}.results-intro .index{font-family:"Syne",sans-serif;font-size:clamp(4rem,10vw,8rem);line-height:.8;letter-spacing:-.09em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.8)}.results-intro h2{margin:0;font-family:"Syne",sans-serif;font-size:clamp(2rem,4vw,4.2rem);line-height:.95;letter-spacing:-.07em}.results-intro p{margin:10px 0 0;color:rgba(255,255,255,.78);max-width:760px;font-size:1.04rem;line-height:1.45}.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:26px}.case-top{padding:22px 22px 0}.case-number{display:inline-flex;align-items:center;justify-content:center;width:66px;height:66px;border-radius:22px;background:linear-gradient(135deg,var(--accent),#ffbf7a);color:#fff;font-family:"Syne",sans-serif;font-size:1.6rem;letter-spacing:-.06em;box-shadow:0 14px 24px rgba(255,146,43,.28)}.case-title-row{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin-bottom:12px}.case-title-row h3{font-family:"Syne",sans-serif;font-size:clamp(1.7rem,2.8vw,2.8rem);line-height:.96;letter-spacing:-.06em}.case-kicker{color:var(--muted);font-weight:800;margin-bottom:4px}.case-copy{color:#26384d;line-height:1.4;margin:0 0 16px}
+    .case-media{display:grid;grid-template-columns:.92fr 1.08fr;gap:18px;padding:0 22px 22px;align-items:start}.case-shot,.gallery-strip .shot{overflow:hidden;background:#141414;box-shadow:0 12px 28px rgba(0,0,0,.12)}.case-shot{border-radius:28px;min-height:360px;display:flex;align-items:center;justify-content:center}.case-shot img,.gallery-strip .shot img{width:100%;height:100%;object-fit:cover}.case-shot.phone-shot{width:178px;max-width:100%;min-height:430px;justify-self:start;border-radius:34px;background:transparent;box-shadow:none}.case-shot.phone-shot img{border-radius:34px;object-fit:cover;object-position:center top;background:#111;box-shadow:0 16px 30px rgba(0,0,0,.16)}.case-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.metric{min-height:132px;border-radius:28px;background:#202020;color:#fff;padding:18px;position:relative;display:flex;flex-direction:column;justify-content:space-between}.metric::after{content:"";position:absolute;right:16px;top:16px;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle,#fff 0 30%,transparent 31%);opacity:.7}.metric strong{display:block;font-family:"Syne",sans-serif;font-size:clamp(2rem,4vw,3.4rem);line-height:.9;letter-spacing:-.07em}.metric span{display:block;font-weight:800;color:rgba(255,255,255,.92);font-size:.98rem;line-height:1.2}.metric em{font-style:normal;color:#3dd661;font-weight:800}
+    .skills-panel{margin-top:24px}.skills-list{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin-top:14px}.skill-line{padding:14px 16px;border-radius:20px;background:rgba(255,255,255,.78);border:1px solid rgba(16,16,16,.06);font-weight:700;color:#24364a}
+    .web-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;margin-top:24px}.web-card video{width:100%;border-radius:28px;background:#0f0f10;box-shadow:0 16px 34px rgba(0,0,0,.18)}.project-link{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:999px;background:#111;color:#fff;font-weight:800;margin-top:14px}
+    .gallery-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:18px}.gallery-strip .shot{border-radius:22px;aspect-ratio:.6}
+    .contact-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;border-radius:22px;background:rgba(255,255,255,.66);border:1px solid rgba(16,16,16,.08);font-weight:700}.contact-link small{display:block;color:var(--muted);font-size:.85rem;font-weight:700}.social-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.social-btn{padding:13px 18px;border-radius:999px;background:#111;color:#fff;font-weight:700;border:1px solid rgba(255,255,255,.06)}.social-btn.muted{background:#ece8e2;color:#222;border-color:rgba(16,16,16,.08)}.field{display:grid;gap:8px}.field label{font-weight:800;color:#24364a}.field input,.field textarea{width:100%;border-radius:20px;border:1px solid rgba(16,16,16,.12);background:rgba(255,255,255,.82);padding:16px 18px;outline:none;color:var(--ink);resize:vertical}.field input:focus,.field textarea:focus{border-color:rgba(255,146,43,.8);box-shadow:0 0 0 4px rgba(255,146,43,.12)}.submit-btn{border:0;border-radius:999px;padding:16px 22px;font-weight:800;background:var(--accent);color:#fff;cursor:pointer;width:fit-content;box-shadow:0 14px 24px rgba(255,146,43,.24)}
+    .footer{padding:22px 0 34px;text-align:center;color:#d2cfc9;background:#0d0d11}.footer-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:10px}.footer-icon{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08);color:#fff}
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    @media (max-width:1140px){.hero-stage,.split,.cards-two,.connect,.web-grid{grid-template-columns:1fr}.hero-stage{min-height:auto;gap:20px}.hero-quote,.hero-side{justify-self:center;text-align:center;max-width:700px;padding-bottom:0}.hero-visual{order:-1;min-height:430px}.portrait-card{min-height:560px}.portrait-card img{width:min(100%,520px)}.case-grid{grid-template-columns:1fr}.skills-list{grid-template-columns:1fr 1fr}}
+    @media (max-width:860px){.top-pill__inner{width:calc(100vw - 28px);justify-content:center}.hero{padding-top:74px}.hero-title{font-size:clamp(3rem,16vw,4.6rem)}.hero-subtitle{font-size:clamp(1.7rem,7vw,2.6rem)}.hero-visual{min-height:380px}.hero-photo{width:300px}.chip{position:static;margin:8px}.hero-visual{display:grid;justify-items:center;align-content:end}.hero-note{min-height:auto;padding:12px 18px;font-size:.92rem}.hero-note.left,.hero-note.right{margin:0 auto 14px;max-width:360px}.portrait-card{min-height:500px}.portrait-card img{width:min(100%,420px)}.stat-grid,.gallery-strip,.tools-grid,.bullet-grid,.case-media,.case-stats,.skills-list{grid-template-columns:1fr}.results-intro{grid-template-columns:1fr}.results-intro .index{font-size:4.6rem}}
+    @media (max-width:560px){.section{padding:28px 0}.hello-badge{padding:10px 22px;font-size:.96rem}.hero-visual{min-height:360px}.stat-grid{grid-template-columns:1fr}.logo-tile{width:70px;height:70px}.logo-tile svg{width:42px;height:42px}.contact-link{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="top-pill">
+    <div class="top-pill__inner">
+      <a class="is-active" href="#hero">Portfolio</a>
+      <a href="#results">Results</a>
+      <a href="#connect">Hire me</a>
+    </div>
+  </div>
+
+  <header class="hero" id="hero">
+    <div class="spark left">)))</div>
+    <div class="spark right">)))</div>
+    <div class="container">
+      <div class="hero-intro">
+        <div class="hello-badge" id="hello-text">Hello!</div>
+        <h1 class="hero-title">I'm <span class="accent">Anurag</span> <span class="emoji">&#128075;</span>,</h1>
+        <div class="hero-subtitle">A Digital Marketing Manager, Growth Strategist &amp; Developer</div>
+      </div>
+      <div class="hero-stage">
+        <aside class="hero-quote">
+          <div class="hero-quote-mark">"</div>
+          <p>I help brands turn content, paid media, and digital execution into stronger visibility, better engagement, and measurable growth.</p>
+        </aside>
+        <div class="hero-visual">
+          <div class="chip marketing">&#128227; Marketing</div>
+          <div class="chip brand">&#127775; Brand</div>
+          <img class="hero-photo" src="assets/hero-photo.png" alt="Anurag Sajikumar Nair portrait">
+          <div class="chip ads">&#128640; Ads</div>
+          <div class="chip social">&#128241; Social Media</div>
+        </div>
+        <aside class="hero-side">
+          <div class="big">4 Years</div>
+          <div class="small">of hands-on work across SEO, paid media, social media systems, websites, and client growth campaigns</div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <section class="stat-band">
+    <div class="container stat-grid">
+      <div class="stat"><strong>29M+</strong><span>highest monthly views handled</span></div>
+      <div class="stat"><strong>97K+</strong><span>audience growth touched</span></div>
+      <div class="stat"><strong>35+</strong><span>worked with brands</span></div>
+      <div class="stat"><strong>50M+</strong><span>sales-related campaign scale</span></div>
+      <div class="stat"><strong>100%</strong><span>portfolio built around real work</span></div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee" aria-hidden="true">
+      <span>Brand Strategy <em>*</em> Performance Marketing <em>*</em> Social Media <em>*</em> Growth Campaigns <em>*</em> Analytics <em>*</em> SEO <em>*</em> Lead Generation <em>*</em></span>
+      <span>Brand Strategy <em>*</em> Performance Marketing <em>*</em> Social Media <em>*</em> Growth Campaigns <em>*</em> Analytics <em>*</em> SEO <em>*</em> Lead Generation <em>*</em></span>
+    </div>
+  </div>
+
+  <main>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2 class="section-title">about.</h2>
+          <div class="lead-copy">
+            <p>Call me Anurag. I work at the intersection of digital marketing, paid media, growth, and creative execution, with a strong focus on helping brands get seen and remembered.</p>
+            <p><span class="underline">With four years of professional experience,</span> I have worked on Meta Ads, Google Ads, technical SEO, content planning, campaign execution, social media systems, performance reporting, and frontend website work. I enjoy turning messy marketing needs into clear strategy and measurable output.</p>
+            <p>I am especially comfortable building growth campaigns for service businesses, ecommerce, hospitality, lifestyle, and jewellery brands, and I also build websites that support brand presence, conversion, and presentation.</p>
+          </div>
+        </div>
+        <div class="portrait-card">
+          <img src="assets/about-photo.png" alt="Anurag with awards">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cards-two">
+        <article class="card card-pad">
+          <h2 class="section-title">experience.</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">MT</div>
+              <h3 class="item-title">Digital Marketing Manager &middot; MTwilight Marketing &amp; Advertising</h3>
+              <div class="meta">Nov 2025 - Present &middot; On site</div>
+              <div class="item-copy">Driving digital campaigns, paid ads, SEO support, content systems, client reporting, and cross-functional delivery across brand accounts.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">PI</div>
+              <h3 class="item-title">Digital Marketing Manager &middot; Popcorn IT USA</h3>
+              <div class="meta">July 2022 - Oct 2024 &middot; Remote</div>
+              <div class="item-copy">Ran Meta Ads and Google Ads, handled SEO support, and built strategies focused on lead generation and revenue growth.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">TS</div>
+              <h3 class="item-title">Social Media Manager &middot; Technosports Pvt Ltd</h3>
+              <div class="meta">Jan 2025 - Sept 2025 &middot; Remote</div>
+              <div class="item-copy">Managed daily posting, social media accounts, content calendars, creative coordination, and campaign performance review.</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">BI</div>
+              <h3 class="item-title">Digital Marketing Executive &middot; Big Internet Commerce Inc Canada</h3>
+              <div class="meta">Nov 2025 - Jan 2025 &middot; Remote</div>
+              <div class="item-copy">Executed campaigns across Google Ads, Meta Ads, and email platforms, while improving CTR, CPC, and ROI performance.</div>
+            </div>
+          </div>
+        </article>
+
+        <div class="stack">
+          <article class="card card-pad">
+            <h2 class="section-title">education.</h2>
+            <div class="mini-list">
+              <div class="mini-item">
+                <div class="mini-logo">MES</div>
+                <div>
+                  <h3 class="item-title">MES IMCC</h3>
+                  <div class="meta">2024 - Current</div>
+                  <div class="item-copy">Master in Computer Application</div>
+                </div>
+              </div>
+              <div class="mini-item">
+                <div class="mini-logo">BYK</div>
+                <div>
+                  <h3 class="item-title">B.Y.K College of Commerce</h3>
+                  <div class="meta">2021 - 2024</div>
+                  <div class="item-copy">Bachelor in Business Administration (Computer Application)</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-pad">
+            <h2 class="section-title">skills.</h2>
+            <div class="skills-list">
+              <div class="skill-line">Performance Marketing</div>
+              <div class="skill-line">Meta Ads</div>
+              <div class="skill-line">Google Ads</div>
+              <div class="skill-line">SEO (On-page &amp; Off-page)</div>
+              <div class="skill-line">Lead Generation</div>
+              <div class="skill-line">Campaign Optimization</div>
+              <div class="skill-line">Conversion Rate Optimization</div>
+              <div class="skill-line">Data Analysis &amp; Reporting</div>
+              <div class="skill-line">Advanced Excel</div>
+              <div class="skill-line">Content Planning</div>
+              <div class="skill-line">Creative Coordination</div>
+              <div class="skill-line">Technical SEO</div>
+              <div class="skill-line">Keyword Research</div>
+              <div class="skill-line">Competitor Analysis</div>
+              <div class="skill-line">Social Media Management</div>
+              <div class="skill-line">Email Marketing</div>
+              <div class="skill-line">Frontend Website Work</div>
+              <div class="skill-line">Multilingual Communication</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tools-wrap">
+          <h2 class="section-title">tools.</h2>
+          <div class="tools-grid">
+            <div class="tool-group">
+              <div class="tool-header"><span class="pill">Marketing Strategy</span></div>
+              <div class="logo-row">
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><rect x="8" y="42" width="8" height="14" rx="4" fill="#f59f00"/><rect x="24" y="26" width="8" height="30" rx="4" fill="#f59f00"/><rect x="40" y="14" width="8" height="42" rx="4" fill="#f59f00"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><rect x="10" y="14" width="44" height="34" rx="8" fill="#dce8ff"/><rect x="10" y="14" width="44" height="8" rx="8" fill="#6ea5ff"/><path d="M23 28h18v12H23z" fill="#fff"/><path d="M30 28v14m-6-7h18" stroke="#555" stroke-width="3" stroke-linecap="round"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><path d="M13 42 24 33l8 5 17-18" fill="none" stroke="#4caf50" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M47 19h7v7" fill="none" stroke="#ffb300" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M13 50h38" fill="none" stroke="#a0aec0" stroke-width="3" stroke-linecap="round"/></svg></div>
+              </div>
+              <div class="bullet-grid"><span>Google Analytics</span><span>Google Trends</span><span>Search Console</span><span>Keyword Research</span></div>
+            </div>
+
+            <div class="tool-group">
+              <div class="tool-header"><span class="pill">Branding &amp; Social Media Marketing</span></div>
+              <div class="logo-row">
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><defs><linearGradient id="adobeGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff3b30"/><stop offset="1" stop-color="#ffcc00"/></linearGradient></defs><rect x="10" y="10" width="44" height="44" rx="14" fill="url(#adobeGrad)"/><path d="M24 40c3-9 8-16 8-16s5 7 8 16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><path d="M18 18 46 46M46 18 18 46M18 25l28-7M18 39l28 7" stroke="#111" stroke-width="5" stroke-linecap="round"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><circle cx="24" cy="19" r="9" fill="#f24e1e"/><circle cx="24" cy="32" r="9" fill="#a259ff"/><circle cx="24" cy="45" r="9" fill="#0acf83"/><circle cx="37" cy="19" r="9" fill="#ff7262"/><circle cx="37" cy="32" r="9" fill="#1abcfe"/></svg></div>
+              </div>
+              <div class="bullet-grid"><span>Adobe Creative Suite</span><span>CapCut</span><span>Figma</span><span>Content Systems</span></div>
+            </div>
+
+            <div class="tool-group">
+              <div class="tool-header"><span class="pill">Analytics &amp; Insight</span></div>
+              <div class="logo-row">
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><rect x="12" y="34" width="10" height="18" rx="3" fill="#f2c94c"/><rect x="26" y="22" width="10" height="30" rx="3" fill="#ffd86e"/><rect x="40" y="12" width="10" height="40" rx="3" fill="#ffefad"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><rect x="15" y="14" width="34" height="36" rx="6" fill="#fff"/><path d="M22 42V22m10 20V18m10 24V26" stroke="#f59f00" stroke-width="5" stroke-linecap="round"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><path d="M18 18h12l16 16v12H34L18 30z" fill="#d61f26"/><path d="M30 18v16h16" fill="none" stroke="#f7c2c5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              </div>
+              <div class="bullet-grid"><span>Power BI</span><span>Google Analytics</span><span>Microsoft 365</span><span>Advanced Excel</span></div>
+            </div>
+
+            <div class="tool-group">
+              <div class="tool-header"><span class="pill">Ads &amp; Growth</span></div>
+              <div class="logo-row">
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><path d="M16 38c8-20 14-20 20 0 5 17 11 17 12 0" fill="none" stroke="#1a73e8" stroke-width="5" stroke-linecap="round"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><rect x="12" y="12" width="40" height="40" rx="6" fill="#163c93"/><circle cx="32" cy="26" r="8" fill="#fff"/><path d="M20 46c3-7 8-10 12-10s9 3 12 10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg></div>
+                <div class="logo-tile"><svg viewBox="0 0 64 64"><path d="M22 42 32 18l10 24" fill="none" stroke="#fbbc05" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 42h12" stroke="#4285f4" stroke-width="8" stroke-linecap="round"/><path d="M36 42h12" stroke="#34a853" stroke-width="8" stroke-linecap="round"/></svg></div>
+              </div>
+              <div class="bullet-grid"><span>Meta Ads</span><span>Google Ads</span><span>Performance Tracking</span><span>Campaign Optimization</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="container">
+        <div class="results-intro">
+          <div class="index">01</div>
+          <div>
+            <h2>Real brand results and growth snapshots.</h2>
+            <p>A selection of client-facing outcomes across jewellery, hospitality, fashion, and lifestyle brands, showing the kind of reach, engagement, and growth performance I help businesses unlock through strategy, content, paid media, and digital execution.</p>
+          </div>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-top">
+              <div class="case-title-row"><div class="case-number">01</div><div><div class="case-kicker">Jewellery Brand Growth</div><h3>SS Nagarkar Jewellers Pune</h3></div></div>
+              <p class="case-copy">Luxury jewellery content, profile positioning, and consistent Instagram activity built into a visibly stronger high-reach account presence.</p>
+            </div>
+            <div class="case-media">
+              <div class="case-shot phone-shot"><img src="assets/ssnagarkar-profile.jpeg" alt="SS Nagarkar Jewellers Instagram profile screenshot"></div>
+              <div class="case-stats">
+                <div class="metric"><strong>97.2K<em>+</em></strong><span>followers on profile</span></div>
+                <div class="metric"><strong>29.8M</strong><span>monthly views handled</span></div>
+                <div class="metric"><strong>443</strong><span>accounts followed while growing premium positioning</span></div>
+                <div class="metric"><strong>Luxury</strong><span>content style built for reach and visual trust</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-top">
+              <div class="case-title-row"><div class="case-number">02</div><div><div class="case-kicker">Premium Jewellery Reach</div><h3>BSJ Jewellers</h3></div></div>
+              <p class="case-copy">High-volume content output with strong reel traction, premium jewellery presentation, and consistent audience attention across visual posts.</p>
+            </div>
+            <div class="case-media">
+              <div class="case-shot phone-shot"><img src="assets/bsj-profile.jpeg" alt="BSJ Jewellers Instagram profile screenshot"></div>
+              <div class="case-stats">
+                <div class="metric"><strong>10.4K</strong><span>followers on profile</span></div>
+                <div class="metric"><strong>29.6M</strong><span>views shown in dashboard</span></div>
+                <div class="metric"><strong>17.9K</strong><span>interactions visible in dashboard</span></div>
+                <div class="metric"><strong>697K</strong><span>single reel view visible on profile grid</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-top">
+              <div class="case-title-row"><div class="case-number">03</div><div><div class="case-kicker">Hospitality &amp; Experience Marketing</div><h3>Nature Nest</h3></div></div>
+              <p class="case-copy">Family outing and picnic resort content with strong scenic reels, entertainment-led storytelling, and broad non-follower reach.</p>
+            </div>
+            <div class="case-media">
+              <div class="case-shot phone-shot"><img src="assets/nature-profile.jpeg" alt="Nature Nest Instagram profile screenshot"></div>
+              <div class="case-stats">
+                <div class="metric"><strong>14.5M</strong><span>views in reporting period</span></div>
+                <div class="metric"><strong>5.58M</strong><span>accounts reached</span></div>
+                <div class="metric"><strong>3.3K</strong><span>followers on upgraded profile</span></div>
+                <div class="metric"><strong>2.42M</strong><span>top visible content view</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-top">
+              <div class="case-title-row"><div class="case-number">04</div><div><div class="case-kicker">Saree Brand Visibility</div><h3>Zari Kath Sarees</h3></div></div>
+              <p class="case-copy">Traditional fashion content positioned in a premium way, with visual consistency and stronger discoverability through reels and post-led reach.</p>
+            </div>
+            <div class="case-media">
+              <div class="case-shot phone-shot"><img src="assets/zarikath-profile.jpeg" alt="Zari Kath Sarees Instagram profile screenshot"></div>
+              <div class="case-stats">
+                <div class="metric"><strong>45.9M</strong><span>views shown in performance screen</span></div>
+                <div class="metric"><strong>17.8M</strong><span>accounts reached</span></div>
+                <div class="metric"><strong>1.7K</strong><span>followers on profile snapshot</span></div>
+                <div class="metric"><strong>5.7M</strong><span>last 30 days profile dashboard</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-top">
+              <div class="case-title-row"><div class="case-number">05</div><div><div class="case-kicker">Regional Jewellery Visibility</div><h3>Vispute Saraf Jewellers</h3></div></div>
+              <p class="case-copy">Short-form jewellery content and profile-led growth work that converted into strong visibility and over a million accounts reached in the period shown.</p>
+            </div>
+            <div class="case-media">
+              <div class="case-shot phone-shot"><img src="assets/vispute-profile.jpeg" alt="Vispute Saraf Jewellers Instagram profile screenshot"></div>
+              <div class="case-stats">
+                <div class="metric"><strong>2.14M</strong><span>views in last 30 days</span></div>
+                <div class="metric"><strong>1.27M</strong><span>accounts reached</span></div>
+                <div class="metric"><strong>3.9K</strong><span>followers on profile</span></div>
+                <div class="metric"><strong>99.2%</strong><span>non-follower reach shown</span></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-top">
+              <div class="case-title-row"><div class="case-number">06</div><div><div class="case-kicker">Saree &amp; Ethnic Content Growth</div><h3>Nirupa's Sarees</h3></div></div>
+              <p class="case-copy">Premium ethnicwear presentation, richer visual merchandising, and better reel performance for a catalog-driven saree brand presence.</p>
+            </div>
+            <div class="case-media">
+              <div class="case-shot phone-shot"><img src="assets/nirupa-profile.jpeg" alt="Nirupa's Sarees Instagram profile screenshot"></div>
+              <div class="case-stats">
+                <div class="metric"><strong>24.7M</strong><span>views shown in custom range</span></div>
+                <div class="metric"><strong>10.8M</strong><span>accounts reached</span></div>
+                <div class="metric"><strong>6.3K</strong><span>followers on profile</span></div>
+                <div class="metric"><strong>7.8M</strong><span>profile dashboard monthly highlight</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="gallery-strip">
+          <div class="shot"><img src="assets/pavitra-profile.jpeg" alt="Pavitra Soni Jewellers profile screenshot"></div>
+          <div class="shot"><img src="assets/trimurti-profile.jpeg" alt="Trimurti Banquets profile screenshot"></div>
+          <div class="shot"><img src="assets/bsj-content.jpeg" alt="Jewellery content performance screenshot"></div>
+          <div class="shot"><img src="assets/nature-content.jpeg" alt="Nature Nest content performance screenshot"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="results-intro">
+          <div class="index">02</div>
+          <div>
+            <h2>Developer work and live web projects.</h2>
+            <p>I am also a developer, and alongside marketing work I have created websites and web experiences. This section highlights that side too, including a live project link and demo video.</p>
+          </div>
+        </div>
+
+        <div class="web-grid">
+          <article class="web-card">
+            <h2 class="section-title">web projects.</h2>
+            <div class="lead-copy" style="max-width:none">
+              <p>I have made more than <span class="underline">10 web projects</span>, including landing pages, brand websites, and conversion-focused web experiences that support campaigns and client presentation.</p>
+              <p>Featured project: <strong>Elixifit Out</strong></p>
+              <a class="project-link" href="https://www.elixifit-out.com/" target="_blank" rel="noreferrer">Open live website</a>
+            </div>
+          </article>
+
+          <article class="web-card">
+            <h2 class="section-title">demo.</h2>
+            <video controls muted preload="metadata">
+              <source src="assets/web-project-demo.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="connect">
+      <div class="container connect">
+        <article class="connect-card">
+          <h2 class="section-title">connect.</h2>
+          <div class="lead-copy" style="max-width:none">
+            <p>If you want to work together on performance marketing, Instagram growth, paid campaigns, SEO support, or content systems, this section makes it easy to reach out directly.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-link" href="mailto:anuragnair420@gmail.com"><div>Email<small>anuragnair420@gmail.com</small></div><strong>Send mail</strong></a>
+            <a class="contact-link" href="tel:+919579298337"><div>Phone<small>+91 9579298337</small></div><strong>Call now</strong></a>
+          </div>
+          <div class="social-row">
+            <a class="social-btn" href="mailto:anuragnair420@gmail.com">Email</a>
+            <a class="social-btn" href="tel:+919579298337">Phone</a>
+            <a class="social-btn muted" href="https://www.linkedin.com/in/anurag-nair-16b291242?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="social-btn muted" href="https://www.instagram.com/anuragnair_20?igsh=MWdxdzNoaXV5cTFocw==" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </article>
+
+        <article class="connect-card">
+          <h2 class="section-title">form.</h2>
+          <form class="form-grid" id="contact-form" action="https://formsubmit.co/anuragnair420@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New portfolio inquiry from website">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required></div>
+            <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="Enter your email" required></div>
+            <div class="field"><label for="message">Project details</label><textarea id="message" name="message" rows="6" placeholder="Tell me about your project, brand, or campaign goals" required></textarea></div>
+            <button class="submit-btn" type="submit">Send inquiry</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Anurag Sajikumar Nair</p>
+      <div class="footer-links">
+        <a class="footer-icon" href="https://www.instagram.com/anuragnair_20?igsh=MWdxdzNoaXV5cTFocw==" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+        </a>
+        <a class="footer-icon" href="https://www.linkedin.com/in/anurag-nair-16b291242?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3A1.97 1.97 0 0 0 3.25 5c0 1.1.89 2 2 2s2-.9 2-2a1.98 1.98 0 0 0-2-2ZM20.75 12.6c0-3.2-1.7-4.7-4.01-4.7-1.85 0-2.68 1.02-3.14 1.73V8.5h-3.37c.04.75 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.68.13-.92.27-.68.88-1.39 1.92-1.39 1.35 0 1.89 1.03 1.89 2.54V20h3.37v-7.4Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const greetings = ["Hello!", "Namaste!", "Hola!", "Bonjour!", "Ciao!", "Hallo!"];
+    const helloText = document.getElementById("hello-text");
+    let currentGreeting = 0;
+    setInterval(() => { currentGreeting = (currentGreeting + 1) % greetings.length; helloText.textContent = greetings[currentGreeting]; }, 1600);
+  </script>
+</body>
+</html>
